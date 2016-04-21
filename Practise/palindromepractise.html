@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pal Practise</title>
+</head>
+<body>
+<!--
+<script type="text/javascript">
+	var str;
+
+	document.getElementById('str');
+
+	function palindrome() {
+
+		str.split("").reverse().join("");
+		str = str.split("").reverse().join("")
+
+		
+			// body...
+	}
+	palindrome()
+
+
+</script>
+Enter name
+<input type="text" id="str" placeholder="value">
+<input type="button" value="Hit me!" onclick="palindrome()">
+
+-->
+<h1>Check Palindrome!!</h1>
+<hr>
+<form id="form_id">
+	Enter the string:
+    <input type="text" id="userinput" placeholder="Enter string and hit enter">
+</form>
+<script type="text/javascript">
+	
+var isPalindrome = function (string) {
+    if (string == string.split('').reverse().join('')) {
+        alert(string + ' is palindrome.');
+    }
+    else {
+        alert(string + ' is not palindrome.');
+    }
+}
+
+document.getElementById('form_id').onsubmit = function() {
+   isPalindrome(document.getElementById('userinput').value);
+    return false;
+}
+
+</script>
+</body>
+</html>

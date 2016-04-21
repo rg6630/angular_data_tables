@@ -1,0 +1,11 @@
+make two object
+
+1 object == will hold the objects
+2 object == will hold the definition
+
+use closure
+
+1st function: will hit a button ( to give the property and values)
+1nd function: will give the definition when the button is hit or called.
+
+may 17 july 21

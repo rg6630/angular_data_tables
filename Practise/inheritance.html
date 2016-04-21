@@ -1,0 +1,45 @@
+<html>
+<head>
+	<title>JavaScript - Inheritance</title>
+	
+</head>
+<body>
+	 
+	<script>
+		function SuperParent(age){
+			this.super_prop_age = age;
+			this.newProp = "New Property";
+		}
+
+		SuperParent.prototype.newProp = "New Property";
+		
+		SuperParent.prototype.getNewProp = function(){
+			console.log(this.super_prop_age);
+
+		}
+
+ 	 	function Parent(name, location){
+ 	 		this.parent_name = name;
+ 	 		this.parent_loc = location;
+ 	 	}
+ 	 	function Child(des, sal){
+ 	 		this.child_design = des;
+ 	 		this.child_salary = sal;
+ 	 	}
+
+ 	 	Parent.prototype = new SuperParent(76);
+ 	 	Child.prototype = new Parent("John Ed", "Fremont  CA");
+
+
+ 	 	var child_details = new Child("UI Dev", 5000);
+
+ 	 	child_details.super_prop_age ///
+
+ 	 	debugger;
+ 	 	///john_details.designation
+ 	 	
+
+ 	 
+	</script>
+</body>
+</html>
